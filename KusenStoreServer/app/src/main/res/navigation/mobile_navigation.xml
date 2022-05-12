@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_category">
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.potensiutama.kusenstoreadmin.ui.kategori.KategoriFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_kategori" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.potensiutama.kusenstoreadmin.ui.list_produk.ListProdukFragment"
+        android:label="@string/menu_produk_list"
+        tools:layout="@layout/fragment_produk_list">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_produk"
+        android:name="com.potensiutama.kusenstoreadmin.ui.list_produk.ListProdukFragment"
+        android:label="@string/menu_produk_list"
+        tools:layout="@layout/fragment_produk_list">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_order"
+        android:name="com.potensiutama.kusenstoreadmin.ui.order.OrderFragment"
+        android:label="@string/menu_order"
+        tools:layout="@layout/fragment_order">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_data_penjualan"
+        android:name="com.potensiutama.kusenstoreadmin.ui.data_penjualan.DataPenjualanFragment"
+        android:label="Rekapitulasi Data Penjualan"
+        tools:layout="@layout/fragment_data_penjualan">
+
+    </fragment>
+
+</navigation>

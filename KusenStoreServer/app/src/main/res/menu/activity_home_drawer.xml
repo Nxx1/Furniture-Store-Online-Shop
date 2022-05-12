@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Produk">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_category"
+                    android:icon="@drawable/ic_baseline_category_24"
+                    android:title="@string/menu_category" />
+                <item
+                    android:id="@+id/nav_produk"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/menu_produk" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Penjualan">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_order"
+                    android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+                    android:title="@string/menu_data_penjualan" />
+                <item
+                    android:id="@+id/nav_data_penjualan"
+                    android:icon="@drawable/ic_baseline_attach_money_24"
+                    android:title="@string/menu_rekap_penjualan" />
+            </group>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="none">
+        <item android:title="Pengaturan">
+            <menu>
+                <item
+                    android:id="@+id/nav_informasi_toko"
+                    android:icon="@drawable/ic_baseline_store_24"
+                    android:title="@string/menu_informasi_toko" />
+                <item
+                    android:id="@+id/nav_metode_pembayaran"
+                    android:icon="@drawable/ic_baseline_payments_24"
+                    android:title="@string/menu_metode_pembayaran" />
+                <item
+                    android:id="@+id/nav_data_kurir"
+                    android:icon="@drawable/ic_baseline_sports_motorsports_24"
+                    android:title="@string/menu_data_kurir" />
+            </menu>
+        </item>
+    </group>
+
+
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/menu_sign_out" />
+    </group>
+
+
+
+</menu>

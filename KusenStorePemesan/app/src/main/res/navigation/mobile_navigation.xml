@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.potensiutama.kusenstoreclient.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.potensiutama.kusenstoreclient.ui.menu.MenuFragment"
+        android:label="@string/menu_menu"
+        tools:layout="@layout/fragment_menu" />
+
+    <fragment
+        android:id="@+id/nav_food_detail"
+        android:name="com.potensiutama.kusenstoreclient.ui.fooddetail.FoodDetailFragment"
+        android:label="@string/menu_food_detail"
+        tools:layout="@layout/fragment_food_detail" />
+
+    <fragment
+        android:id="@+id/nav_view_orders"
+        android:name="com.potensiutama.kusenstoreclient.ui.view_orders.OrderFragment"
+        android:label="@string/menu_view_orders"
+        tools:layout="@layout/fragment_view_order" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.potensiutama.kusenstoreclient.ui.cart.CartFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_cart" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.potensiutama.kusenstoreclient.ui.productlist.ProductListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" />
+
+    <fragment
+        android:id="@+id/nav_product_list"
+        android:name="com.potensiutama.kusenstoreclient.ui.productlist.ProductListFragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_produk_list" />
+
+    <activity
+        android:id="@+id/nav_akun_saya"
+        android:label="Informasi Akun Saya"
+        android:name="com.potensiutama.kusenstoreclient.ui.akunsaya.AkunSayaActivity"
+        tools:layout="@layout/activity_akun_saya"/>
+</navigation>
